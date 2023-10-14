@@ -1,0 +1,14 @@
+body{
+    background-color: red;
+    text-align: center;
+}
+.click{
+    background-color: red;
+    height: 50px;
+    width: 100px;
+}
+
+.click:hover{
+    background-color: black;
+    color: white;
+}
