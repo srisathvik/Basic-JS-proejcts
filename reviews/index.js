@@ -35,7 +35,7 @@ function getRandomInt(max) {
   }
   
 function changeData(e){
-    console.log(e.srcElement.innerText, "check");
+    // console.log(e.srcElement.innerText, "check");
     switch(e.srcElement.innerText){
         case '>':
             index += 1;
@@ -56,19 +56,19 @@ function changeData(e){
         index = 3
     }
 //     // console.log(e);
-    author.innerText = reviews[index].name;
+    document.getElementById("author").innerText = reviews[index].name;
     document.getElementById("job").innerText = reviews[index].job;
     document.getElementById("info").innerText = reviews[index].text;
-    img.src = reviews[index].img;
+    document.getElementById("person-img").src = reviews[index].img;
 //   
 
   }
-var img = document.getElementById("person-img");
-var author = document.getElementById("author");
+// var img = document.getElementById("person-img");
+// var author = document.getElementById("author");
 var buttons = document.querySelectorAll(".btn");
-console.log(buttons);
+// console.log(buttons);
 for(let button = 0; button < buttons.length; button++){
-    console.log(button, buttons[button]);
+    // console.log(button, buttons[button]);
     buttons[button].addEventListener("click", changeData);
 }
 //   var next = document.getElementsByClassName("next-btn");
