@@ -49,11 +49,11 @@ function changeData(e){
 //     console.log(e.childNodes)
 //     console.log(e);
 //     index += 1;
-    if(index > 3){
+    if(index > reviews.length - 1){
         index = 0
     }
     else if(index < 0){
-        index = 3
+        index = reviews.length - 1;
     }
 //     // console.log(e);
     document.getElementById("author").innerText = reviews[index].name;
